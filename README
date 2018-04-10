@@ -1,0 +1,65 @@
+README for Dreamcast Flashrom Tool v1.0
+Copyright (C) 2018 Lawrence Sebald
+---------------------------------------
+
+What is Dreamcast Flashrom Tool?
+--------------------------------
+Dreamcast flashrom tool is a simple tool for manipulating the data stored on the
+internal flashrom of a Dreamcast console. Simply put, it is mostly aimed at
+people who play the Phantasy Star Online series of games, but it is still
+potentially useful for those who don't (especially if you intend to sell a
+console that you've used to play online games in the past).
+
+The tool has three main useful operations that it can perform:
+1. Display the serial numbers used on the console to play Phantasy Star Online
+2. Delete the serial numbers used to play PSO from the console
+3. Delete game settings, PSO serial numbers, and ISP information (probably
+   amongst other data) from the console
+
+Of these operations, #3 is especially useful before selling a console, to ensure
+that potentially private data is not given inadvertently to the next owner of
+the console (specifically, your ISP/email login information and your PSO serial
+numbers).
+
+All operations that make changes to the console require confirmation before they
+can be run. Unless you're mashing a bunch of buttons on your controller, there
+should not be any way to inadvertently delete data from your console. However,
+I don't promise anything. ;-)
+
+There are also a number of other operations that were added to the program
+mainly for my own debugging purposes. These operations are not useful unless you
+load the program with dcload/dc-tool, and they serve fairly little purpose
+outside of debugging the program itself, so they will not be discussed further
+here.
+
+
+Why not just include this with the PSO Patcher?
+-----------------------------------------------
+At some point, I might include it with the Sylverant PSO Patcher as an extra
+utility, however at the current time it is not written in a way that makes that
+convenient or easy.
+
+
+3rd Party Acknowledgements
+--------------------------
+This program makes use of the following 3rd party software:
+
+KallistiOS - Copyright (C) 1997-2018 KallistiOS Contributors
+- Licensed under the KOS License, which is a 3-clause BSD license. See
+  README.3rdparty for more information, and AUTHORS.KOS for the list of
+  KallistiOS authors.
+
+
+License
+-------
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 3,
+as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
